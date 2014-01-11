@@ -1735,10 +1735,10 @@
 		D4545214156E28EF00887EB5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1C1FA38B18817FAF0037542C /* Bridge.cpp */,
-				1C1FA38C18817FAF0037542C /* Bridge.h */,
 				D4545215156E28EF00887EB5 /* AppDelegate.cpp */,
 				D4545216156E28EF00887EB5 /* AppDelegate.h */,
+				1C1FA38B18817FAF0037542C /* Bridge.cpp */,
+				1C1FA38C18817FAF0037542C /* Bridge.h */,
 			);
 			name = Classes;
 			path = ../Classes;

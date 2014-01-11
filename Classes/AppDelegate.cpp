@@ -69,7 +69,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
     ScriptingCore::getInstance()->runScript("cocos2d-jsb.js");
     
-//    JSBHelper::AddSelector("helloCpp", callfuncND_selector(Bridge::helloCpp),new Bridge());
+    JSBHelper::AddSelector("helloCpp", callfuncND_selector(Bridge::helloCpp),new Bridge());
     
     return true;
 }
