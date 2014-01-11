@@ -24,15 +24,44 @@ THE SOFTWARE.
 package com.hardworking.testjsbsample;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.easyjsb.classes.AndroidJSBHelper;
+import com.easyndk.classes.AndroidNDKHelper;
 
 import android.os.Bundle;
+import android.util.Log;
 
 public class EasyJsbSample extends Cocos2dxActivity{
+	private String TAG = "[TestEasyJSB]";
 	
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
+        
+        AndroidNDKHelper.SetNDKReciever(this);
 	}
 	
+    public void helloNative(JSONObject prms){
+		Log.i(TAG, TAG+" this is method: helloNative in native Android, prms: "+prms.toString());
+		
+		final JSONObject obj = new JSONObject();
+		try {
+			obj.put("message","I am message from native Android");
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		
+		this.runOnGLThread(new Runnable(){
+			@Override
+			public void run()
+			{
+                //				AndroidNDKHelper.SendMessageWithParameters("helloCpp", obj);
+				AndroidJSBHelper.SendMessageToJS("helloJS", obj);
+			}
+		});
+	}
+    
     static {
         System.loadLibrary("cocos2djs");
     }

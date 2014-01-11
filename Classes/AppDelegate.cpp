@@ -5,9 +5,7 @@
 #include "ScriptingCore.h"
 #include "generated/jsb_cocos2dx_auto.hpp"
 #include "generated/jsb_cocos2dx_extension_auto.hpp"
-#include "generated/jsb_cocos2dx_studio_auto.hpp"
 #include "jsb_cocos2dx_extension_manual.h"
-#include "jsb_cocos2dx_studio_manual.h"
 #include "cocos2d_specifics.hpp"
 #include "js_bindings_chipmunk_registration.h"
 #include "js_bindings_system_registration.h"
@@ -15,9 +13,13 @@
 #include "jsb_opengl_registration.h"
 #include "XMLHTTPRequest.h"
 #include "jsb_websocket.h"
+#include "JSBHelper.h"
+#include "Bridge.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
+
+extern void register_JSBHelper_js(JSContext* cx, JSObject* global);
 
 AppDelegate::AppDelegate()
 {
@@ -40,26 +42,35 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
     
+    
+    CCSize designSize = CCSizeMake(480, 320);
+    CCSize resourceSize = CCSizeMake(480,320);
+    pDirector->setContentScaleFactor(resourceSize.width/designSize.width);
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionShowAll);
+    
+
     ScriptingCore* sc = ScriptingCore::getInstance();
+
     sc->addRegisterCallback(register_all_cocos2dx);
     sc->addRegisterCallback(register_all_cocos2dx_extension);
     sc->addRegisterCallback(register_all_cocos2dx_extension_manual);
     sc->addRegisterCallback(register_cocos2dx_js_extensions);
-    sc->addRegisterCallback(register_all_cocos2dx_studio);
-    sc->addRegisterCallback(register_all_cocos2dx_studio_manual);
     sc->addRegisterCallback(register_CCBuilderReader);
     sc->addRegisterCallback(jsb_register_chipmunk);
     sc->addRegisterCallback(jsb_register_system);
     sc->addRegisterCallback(JSB_register_opengl);
     sc->addRegisterCallback(MinXmlHttpRequest::_js_register);
     sc->addRegisterCallback(register_jsb_websocket);
-
+    sc->addRegisterCallback(register_JSBHelper_js);
+    
     sc->start();
     
     CCScriptEngineProtocol *pEngine = ScriptingCore::getInstance();
     CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
     ScriptingCore::getInstance()->runScript("cocos2d-jsb.js");
-       
+    
+//    JSBHelper::AddSelector("helloCpp", callfuncND_selector(Bridge::helloCpp),new Bridge());
+    
     return true;
 }
 

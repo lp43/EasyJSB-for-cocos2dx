@@ -29,5 +29,5 @@
 @interface RootViewController : UIViewController {
 
 }
-
+- (void) helloNative:(NSObject *)prms;
 @end

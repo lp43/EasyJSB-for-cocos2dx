@@ -1,6 +1,7 @@
 
 #import "RootViewController.h"
-
+#import "IOSNDKHelper.h"
+#import "IOSJSBHelper.h"
 
 @implementation RootViewController
 
@@ -63,7 +64,23 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+        
+        // 告訴NDKHelper說 RootViewController會回應來自C++的message
+        [IOSNDKHelper SetNDKReciever:self];
+        
+    }
+    return self;
+}
 
+- (void) helloNative:(NSObject *)prms{
+    NSLog(@"this is method: helloNative in ios, prms is: %@",prms);
+    
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"hello, i am message from native ios"],@"message", nil];
+    //    [IOSNDKHelper SendMessage:@"helloJS" WithParameters:dictionary];
+    [IOSJSBHelper SendMessageToJS:@"helloJS" WithParameters:dictionary];
+}
 - (void)dealloc {
     [super dealloc];
 }
