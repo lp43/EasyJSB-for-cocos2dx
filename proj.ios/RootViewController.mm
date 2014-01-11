@@ -67,6 +67,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         
+        NSLog(@"into function: %s",__FUNCTION__);
+        
         // 告訴NDKHelper說 RootViewController會回應來自C++的message
         [IOSNDKHelper SetNDKReciever:self];
         

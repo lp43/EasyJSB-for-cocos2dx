@@ -2,53 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e804fad-abd4-4331-9654-a5e643abe32c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/IOSJSBHelper/IOSJSBHelper.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/IOSNDKHelper/IOSNDKHelper.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/Bridge.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/Bridge.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/IOSJSBHelper/IOSJSBHelper.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/IOSNDKHelper/IOSNDKHelper-C-Interface.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/IOSNDKHelper/IOSNDKHelper.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelper.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelper.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelperCallbackNode.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelperCallbackNode.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/NDKHelper/NDKCallbackNode.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/NDKHelper/NDKCallbackNode.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/NDKHelper/NDKHelper.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/NDKHelper/NDKHelper.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/dump.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/error.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/hashtable.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/hashtable.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/jansson.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/jansson_config.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/jansson_private.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/JSBHelper/js_bindings_easyJSB.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/load.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/memory.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/pack_unpack.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/strbuffer.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/strbuffer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/strconv.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/utf.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/utf.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/jansson/value.c" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Resources/res/CloseNormal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Resources/res/CloseSelected.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.xcworkspace/xcshareddata/EasyJsbSample.xccheckout" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.ios/RootViewController.mm" afterPath="$PROJECT_DIR$/proj.ios/RootViewController.mm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.xcworkspace/xcuserdata/lp43.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.xcworkspace/xcuserdata/lp43.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/AppDelegate.cpp" afterPath="$PROJECT_DIR$/Classes/AppDelegate.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/AppDelegate.h" afterPath="$PROJECT_DIR$/Classes/AppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.ios/RootViewController.h" afterPath="$PROJECT_DIR$/proj.ios/RootViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/cocos2d-jsb.js" afterPath="$PROJECT_DIR$/Resources/cocos2d-jsb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/src/myApp.js" afterPath="$PROJECT_DIR$/Resources/src/myApp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelper.cpp" afterPath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelper.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/NDKHelper/NDKHelper.cpp" afterPath="$PROJECT_DIR$/Classes/NDKHelper/NDKHelper.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JSBHelper/js_bindings_easyJSB.cpp" afterPath="$PROJECT_DIR$/Classes/JSBHelper/js_bindings_easyJSB.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EasyJsbSample.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1389447304799" ignored="false" />
+    <file path="/Dummy.txt" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1389460887206" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myApp.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myApp.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6466552">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSBHelper.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JSBHelper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="22" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.6052632">
+            <state line="25" column="32" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,6 +152,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -207,22 +170,22 @@
     <frame x="10" y="22" width="1260" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -295,7 +258,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="22" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.6052632">
+        <state line="25" column="32" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="32" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6466552">
           <folding />
         </state>
       </provider>

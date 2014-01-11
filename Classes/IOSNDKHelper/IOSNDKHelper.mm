@@ -16,6 +16,7 @@ static NSObject *helperInstance = nil;
 
 void IOSNDKHelperImpl::SetNDKReciever(void *reciever)
 {
+    NSLog(@"into ios function: %s",__FUNCTION__);
     helperInstance = (NSObject*)reciever;
 }
 
@@ -29,17 +30,20 @@ NSObject *getHelperInstance()
 
 void IOSNDKHelperImpl::RecieveCPPMessage(json_t *methodName, json_t *methodParams)
 {
+    NSLog(@"into function: %s, line: %d",__FUNCTION__,__LINE__);
 
     NSObject *reciever = getHelperInstance();
     if (reciever == nil)
     {
+        NSLog(@"into function: %s, line: %d",__FUNCTION__,__LINE__);
         return;
     }
-    
+    NSLog(@"into function: %s, line: %d",__FUNCTION__,__LINE__);
     if (methodName == NULL)
         return;
-    
+    NSLog(@"into function: %s, line: %d",__FUNCTION__,__LINE__);
     const char* methodCalled = json_string_value(methodName);
+    NSLog(@"into function: %s, line: %d",__FUNCTION__,__LINE__);
     NSString *methodCalledStr = [NSString stringWithFormat:@"%@:", [NSString stringWithUTF8String:methodCalled]];
     
     SEL selectorToBeCalled;
@@ -63,8 +67,8 @@ void IOSNDKHelperImpl::RecieveCPPMessage(json_t *methodName, json_t *methodParam
     
     if (methodParams != NULL)
     {
-//        const char* cc = json_string_value(methodParams);
-//        NSLog(@"cc: %s",cc);
+        const char* cc = json_string_value(methodParams);
+        NSLog(@"cc: %s",cc);
         
         // Convert the parameters into NSDictionary
         char* jsonStrLocal = json_dumps(methodParams, JSON_COMPACT | JSON_ENSURE_ASCII);
@@ -147,6 +151,7 @@ void IOSNDKHelperImpl::RecieveCPPMessage(json_t *methodName, json_t *methodParam
 
 + (void) SetNDKReciever:(NSObject*)reciever
 {
+    NSLog(@"into function: %s",__FUNCTION__);
     IOSNDKHelperImpl::SetNDKReciever((void*)reciever);
 }
 @end

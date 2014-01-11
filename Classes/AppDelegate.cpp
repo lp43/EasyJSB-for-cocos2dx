@@ -46,7 +46,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCSize designSize = CCSizeMake(480, 320);
     CCSize resourceSize = CCSizeMake(480,320);
     pDirector->setContentScaleFactor(resourceSize.width/designSize.width);
-    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionShowAll);
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionExactFit);
     
 
     ScriptingCore* sc = ScriptingCore::getInstance();

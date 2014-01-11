@@ -50,13 +50,13 @@ void JSBHelper::CallCppFunction(const char* methodName ,const char* methodParams
     }
 }
 void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodParams){
-//    CCLog("into CallNativeFunction, methodName is: %s, methodParams is: %s", methodName, methodParams);
+    CCLog("into %s, methodName is: %s, methodParams is: %s", __FUNCTION__ ,methodName, methodParams);
     
     if (methodName == NULL){
         CCLog("[Error!!] Can't call cpp function without function name.");
         return;
     }
-    
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     json_error_t jerror;
     json_t* jsonPrms = json_loads(methodParams, 0, &jerror);
 
@@ -64,18 +64,27 @@ void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodPar
     {
         fprintf(stderr, "error: on line %d: %s\n", jerror.line, jerror.text);
     }
-    
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     if (methodParams != NULL)
     {
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         json_t *toBeSentJson = json_object();
         json_t *jsonMethodParams = json_object_get(jsonPrms, __CALLED_METHOD_PARAMS__);
-
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         json_object_set_new(toBeSentJson, __CALLED_METHOD_PARAMS__, jsonMethodParams);
+//                CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         CCObject* obj = (CCDictionary*)NDKHelper::GetCCObjectFromJson(toBeSentJson);
-        SendMessageWithParams(methodName, obj);
+//                CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        SendMessageWithParams(string(methodName), obj);
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        
         json_decref(jsonPrms);
-        json_decref(toBeSentJson);
-        json_decref(jsonMethodParams);
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//        json_decref(jsonMethodParams);
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//        json_decref(toBeSentJson);
+        //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+
     }
     
 }
