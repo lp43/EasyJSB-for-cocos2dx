@@ -79,11 +79,15 @@ void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodPar
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         
         json_decref(jsonPrms);
-//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        
+        //If run code below will cause crash for the reason:
+        //incorrect checksum for freed object - object was probably modified after being freed.
+        //So stop delete to avoid crash. - 20140112 Simon
 //        json_decref(jsonMethodParams);
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
 //        json_decref(toBeSentJson);
-        //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
 
     }
     

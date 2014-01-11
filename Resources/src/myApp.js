@@ -40,6 +40,10 @@ var MyLayer = cc.Layer.extend({
 
         this._super();
 
+        if( sys.os == "android" || sys.os == "Android") {
+            this.setKeypadEnabled(true);
+        }
+
         var size = cc.Director.getInstance().getWinSize();
 
         var btn_callToCpp = cc.MenuItemImage.create(
@@ -102,6 +106,10 @@ var MyLayer = cc.Layer.extend({
         this.addChild(this.sprite, 0);
 
         return true;
+    },
+    backClicked : function(){
+        cc.log("into backClicked");
+        cc.Director.getInstance().end();
     },
     helloJS : function helloJS (returnValue) {
         cc.log("This is method: helloJS in Javascript, get parameter: "+returnValue);
