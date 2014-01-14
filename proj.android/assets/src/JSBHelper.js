@@ -1,5 +1,11 @@
 var JSBHelper = JSBHelper || {};
 JSBHelper.selectorArray = {};
+
+SendMessageToNative = function(func_name, func_params){
+    if( sys.platform == 'browser')return;
+
+    SendMessageToNativeWithCallbackName(func_name, func_params, null, null);
+};
 /**
  * [Corresponding to Manner second]
  *
@@ -13,11 +19,12 @@ JSBHelper.selectorArray = {};
 SendMessageToNativeWithCallbackName = function(func_name, func_params, callback_name, callback){
     if( sys.platform == 'browser')return;
 
-    var type_cb = typeof callback;
+    if(callback!==null){
+        var type_cb = typeof callback;
 
-    if(type_cb != 'function')
-        throw "Expression is of type " +type_cb+ ",not function";
-
+        if(type_cb != 'function')
+            throw "Expression is of type " +type_cb+ ",not function";
+    }
 
     var callMethod = {};
     callMethod["calling_method_name"] = func_name;
@@ -35,8 +42,6 @@ SendMessageToNativeWithCallbackName = function(func_name, func_params, callback_
         cc.log("jsonStr: "+jsonStr);
     }
 
-
-    if(callback!==null)
     JSBHelper.AddSelector(callback_name, callback);
 
     JSBHelper.SendMessageToNative(func_name, jsonStr);

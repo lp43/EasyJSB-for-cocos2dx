@@ -86,10 +86,11 @@ var MyLayer = cc.Layer.extend({
 //                SendMessageToNativeWithCallbackName("helloNative", map);
 
                 //[Manner second.]
-                SendMessageToNativeWithCallbackName("helloNative",map,"helloJS",this.helloJS);
+//                SendMessageToNativeWithCallbackName("helloNative",map,"helloJS",this.helloJS);
+                SendMessageToNativeWithCallbackName("helloNative",null,null,null);
 
-                //TODO 不設CALLBACK，不帶值的傳訊息給NATIVE
-
+//                SendMessageToNative("helloNative",map);
+//                SendMessageToNative("helloNative",null);
 
             },this);
         btn_callToNative.setAnchorPoint(cc.p(0.5, 0.5));

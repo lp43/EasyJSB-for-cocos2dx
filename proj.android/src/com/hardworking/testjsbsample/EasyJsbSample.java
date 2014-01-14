@@ -51,15 +51,7 @@ public class EasyJsbSample extends Cocos2dxActivity{
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		
-		this.runOnGLThread(new Runnable(){
-			@Override
-			public void run()
-			{
-                //				AndroidNDKHelper.SendMessageWithParameters("helloCpp", obj);
-				AndroidJSBHelper.SendMessageToJS("helloJS", obj);
-			}
-		});
+		AndroidJSBHelper.SendMessageToJS(this, "helloJS", obj);
 	}
     
     static {

@@ -3,9 +3,12 @@ package com.easyjsb.classes;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import org.cocos2dx.lib.Cocos2dxActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -22,20 +25,28 @@ public class AndroidJSBHelper
 	private final static int __MSG_FROM_CPP__ = 5; 
 	
 
-	public static void SendMessageToJS(String methodToCall, JSONObject paramList){
+	public static void SendMessageToJS(final Context cnx, final String methodToCall, final JSONObject paramList){
 		Log.i(TAG, "into SendMessageToJS");
 		
-		JSONObject obj = new JSONObject();
-		try
-		{
-			obj.put(__CALLED_METHOD__, methodToCall);
-			obj.put(__CALLED_METHOD_PARAMS__, paramList);
-			JSCallHandler(obj.toString());
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
+		((Cocos2dxActivity)cnx).runOnGLThread(new Runnable(){
+			@Override
+			public void run()
+			{
+				JSONObject obj = new JSONObject();
+				try
+				{
+					obj.put(__CALLED_METHOD__, methodToCall);
+					obj.put(__CALLED_METHOD_PARAMS__, paramList);
+					JSCallHandler(obj.toString());
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		});
+		
+
 	}
 	
 	
