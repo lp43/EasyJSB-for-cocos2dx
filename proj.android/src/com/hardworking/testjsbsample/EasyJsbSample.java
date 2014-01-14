@@ -45,7 +45,7 @@ public class EasyJsbSample extends Cocos2dxActivity{
     public void helloNative(JSONObject prms){
 		Log.i(TAG, TAG+" this is method: helloNative in native Android, prms: "+prms.toString());
 		
-		final JSONObject obj = new JSONObject();
+		JSONObject obj = new JSONObject();
 		try {
 			obj.put("message","I am message from native Android");
 		} catch (JSONException e) {
