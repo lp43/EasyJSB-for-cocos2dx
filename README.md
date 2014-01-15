@@ -65,4 +65,4 @@ Contact me
    * Blogger: [小鰻的cocos2d-x / JSB/ HTML5學習筆記Blogger][2]
 
 [1]: https://github.com/aajiwani/EasyNDK-for-cocos2dx "EasyNDK for cocos2d-x"
-[2]: hhttp://lp43-cocos2dx.blogspot.tw/2014/01/cocos2d-x-jsbeasyjsb-release.html "小鰻的cocos2d-x / JSB/ HTML5學習筆記"
+[2]: http://lp43-cocos2dx.blogspot.tw/2014/01/cocos2d-x-jsbeasyjsb-release.html "小鰻的cocos2d-x / JSB/ HTML5學習筆記"
