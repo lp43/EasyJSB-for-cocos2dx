@@ -1,4 +1,5 @@
-<img src="http://www.cocos2d-x.org/attachments/801/cocos2dx_portrait.png" width=200>
+<img src="https://dl.dropboxusercontent.com/u/12328600/easyJSB.png" width=500>
+
 EasyJSB
 =======
 
@@ -57,7 +58,7 @@ and put EasyJSB project under cocos2dx(your main cocos2dx folder)\projects\ is r
          }
       ```
       
-now obj-c can get message as EasyNDK.
+Now you can commucate easily between javascript and native.
 
 Contact me
 ----------
