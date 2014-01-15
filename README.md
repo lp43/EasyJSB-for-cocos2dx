@@ -60,7 +60,7 @@ and put EasyJSB project under cocos2dx(your main cocos2dx folder)\projects\ is r
       
 Now you can commucate easily between javascript and native.
 
-Contact me
+Read more
 ----------
 
    * Blogger: [小鰻的cocos2d-x / JSB/ HTML5學習筆記Blogger][2]
