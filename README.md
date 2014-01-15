@@ -1,4 +1,4 @@
-<img src="https://dl.dropboxusercontent.com/u/12328600/easyJSB.png" width=500>
+<img src="https://dl.dropboxusercontent.com/u/12328600/easyjsb1.png" width=500>
 
 EasyJSB
 =======
