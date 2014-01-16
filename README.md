@@ -31,7 +31,7 @@ and put EasyJSB project under cocos2dx(your main cocos2dx folder)\projects\ is r
 
      * Drag 5 folders as above to your Xcode project, 2 files to Classes group.
      
-     * Call objective-c method from javascript side.
+     * Call objective-c function from javascript side.
      example:
      ```
      var map = {};
@@ -117,9 +117,9 @@ Now you can comunicate easily between javascript and objective-c (ios).
          $(call import-module,scripting/javascript/bindings)
        ```
          
-   * Copy AndroidJSBHelper.java to package com.easyjsb.classes
+   * Copy AndroidJSBHelper.java to package com.easyjsb.classes(you have to create it).
      
-   * Call objective-c method from javascript side
+   * Call java method from javascript side
        
        example:
        ```
