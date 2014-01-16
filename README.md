@@ -160,7 +160,7 @@ Now you can comunicate easily between javascript and Java (Android).
 Read more
 ----------
 
-   * Blogger: [小鰻的cocos2d-x / JSB/ HTML5學習筆記Blogger][2]
+   * Blogger: [Open EasyJSB Sample quickly][2]
 
 [1]: https://github.com/aajiwani/EasyNDK-for-cocos2dx "EasyNDK for cocos2d-x"
-[2]: http://lp43-cocos2dx.blogspot.tw/2014/01/cocos2d-x-jsbeasyjsb-beta.html "小鰻的cocos2d-x / JSB/ HTML5學習筆記"
+[2]: http://lp43-cocos2dx.blogspot.tw/2014/01/cocos2d-x-jsbcommunicate-with-cpp-and.html "Open EasyJSB Sample quickly"
