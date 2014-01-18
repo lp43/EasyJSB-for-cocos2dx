@@ -1,11 +1,11 @@
 obj/local/armeabi/objs/cocos2dx_static/kazmath/src/utility.o: \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/kazmath/src/utility.c \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/kazmath/include/kazmath/utility.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/include/ccConfig.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/kazmath/src/utility.c \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/kazmath/include/kazmath/utility.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/include/ccConfig.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/android/log.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/math.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
@@ -31,17 +31,17 @@ obj/local/armeabi/objs/cocos2dx_static/kazmath/src/utility.o: \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/asm/page.h
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/kazmath/include/kazmath/utility.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/kazmath/include/kazmath/utility.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/CCPlatformMacros.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/include/ccConfig.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/include/ccConfig.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h:
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/android/log.h:
 

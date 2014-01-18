@@ -1,12 +1,12 @@
 obj/local/armeabi/objs/cocos_extension_static/spine/RegionAttachment.o: \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/RegionAttachment.cpp \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/RegionAttachment.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Attachment.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Atlas.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Slot.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Bone.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/BoneData.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/SlotData.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/RegionAttachment.cpp \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/RegionAttachment.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Attachment.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Atlas.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Slot.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Bone.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/BoneData.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/SlotData.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/math.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -30,32 +30,32 @@ obj/local/armeabi/objs/cocos_extension_static/spine/RegionAttachment.o: \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/machine/limits.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/syslimits.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/asm/page.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/extension.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/extension.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/stdlib.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/string.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/malloc.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/alloca.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/strings.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/memory.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Skeleton.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/SkeletonData.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Skin.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Animation.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/AttachmentLoader.h
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Skeleton.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/SkeletonData.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Skin.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Animation.h \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/AttachmentLoader.h
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/RegionAttachment.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/RegionAttachment.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Attachment.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Attachment.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Atlas.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Atlas.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Slot.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Slot.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Bone.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Bone.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/BoneData.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/BoneData.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/SlotData.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/SlotData.h:
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/math.h:
 
@@ -103,7 +103,7 @@ obj/local/armeabi/objs/cocos_extension_static/spine/RegionAttachment.o: \
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/asm/page.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/extension.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/extension.h:
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/stdlib.h:
 
@@ -117,12 +117,12 @@ obj/local/armeabi/objs/cocos_extension_static/spine/RegionAttachment.o: \
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/memory.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Skeleton.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Skeleton.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/SkeletonData.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/SkeletonData.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Skin.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Skin.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/Animation.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/Animation.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../extensions/spine/AttachmentLoader.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../extensions/spine/AttachmentLoader.h:

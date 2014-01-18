@@ -1,5 +1,5 @@
 obj/local/armeabi/objs/cocos2dx_static/support/base64.o: \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/support/base64.cpp \
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/support/base64.cpp \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/stdio.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,7 +22,7 @@ obj/local/armeabi/objs/cocos2dx_static/support/base64.o: \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/alloca.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/strings.h \
  /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/memory.h \
- /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/support/base64.h
+ /Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/support/base64.h
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/stdio.h:
 
@@ -68,4 +68,4 @@ obj/local/armeabi/objs/cocos2dx_static/support/base64.o: \
 
 /Users/lp43/Android/adt-bundle-mac/android-ndk-r8e/platforms/android-14/arch-arm/usr/include/memory.h:
 
-/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJsbSample/proj.android/../../../cocos2dx/support/base64.h:
+/Users/lp43/cocos2d-x/cocos2d-x2.2.2/projects/EasyJSB/proj.android/../../../cocos2dx/support/base64.h:

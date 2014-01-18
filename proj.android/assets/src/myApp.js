@@ -66,7 +66,7 @@ var MyLayer = cc.Layer.extend({
 
             },this);
         btn_callToCpp.setAnchorPoint(cc.p(0.5, 0.5));
-        btn_callToCpp.setPosition(cc.p(size.width - 100, 60));
+        btn_callToCpp.setPosition(cc.p(size.width - 120, 140));
         var menu = cc.Menu.create(btn_callToCpp);
         menu.setPosition(cc.p(0, 0));
         this.addChild(menu, 1);
@@ -94,17 +94,24 @@ var MyLayer = cc.Layer.extend({
 
             },this);
         btn_callToNative.setAnchorPoint(cc.p(0.5, 0.5));
-        btn_callToNative.setPosition(cc.p(size.width - 100, 20));
+        btn_callToNative.setPosition(cc.p(size.width - 120, 80));
         var menu2 = cc.Menu.create(btn_callToNative);
         menu2.setPosition(cc.p(0, 0));
         this.addChild(menu2, 1);
 
+        this.sprite_callToBg = cc.Sprite.create("res/callToBg.png");
+        this.sprite_callToBg.setPosition(cc.p(size.width -20, 0));
+        this.sprite_callToBg.setAnchorPoint(cc.p(1,0));
+        this.addChild(this.sprite_callToBg, 0);
 
-        this.sprite = cc.Sprite.create("res/HelloWorld.png");
-        this.sprite.setAnchorPoint(cc.p(0.5, 0.5));
-        this.sprite.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.sprite_cocos2d = cc.Sprite.create("res/cocos2d.png");
+        this.sprite_cocos2d.setPosition(cc.p(20, 20));
+        this.sprite_cocos2d.setAnchorPoint(cc.p(0,0));
+        this.addChild(this.sprite_cocos2d, 0);
 
-        this.addChild(this.sprite, 0);
+        var label = cc.LabelTTF.create("See the console", "Thonburi", 22);
+        label.setPosition(cc.p(size.width/2,size.height-50));
+        this.addChild(label);
 
         return true;
     },
