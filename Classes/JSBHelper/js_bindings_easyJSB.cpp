@@ -8,8 +8,14 @@ JSBool JSB_JSBHelper_SendMessageToCppWithParams(JSContext *cx, uint32_t argc, js
 	jsval *argv = JS_ARGV(cx, vp);
 	jsval_to_std_string(cx, argv[0], &func_name);
     jsval_to_std_string(cx, argv[1], &parameter);
-
-    JSBHelper::CallCppFunction(func_name.c_str(),parameter.c_str());
+    
+    if(parameter.empty()){
+//        CCLog("parameter is empty");
+        JSBHelper::CallCppFunction(func_name.c_str(),NULL);
+    }else{
+//        CCLog("parameter is not empty");
+        JSBHelper::CallCppFunction(func_name.c_str(),parameter.c_str());
+    }
     
     //JSVAL_TO_INT(argv[1]);
     
@@ -30,7 +36,15 @@ JSBool JSB_JSBHelper_SendMessageToNative(JSContext *cx, uint32_t argc, jsval *vp
     jsval_to_std_string(cx, argv[1], &parameter);
 //    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     
-    JSBHelper::CallNativeFunction(func_name.c_str(),parameter.c_str());
+    if(parameter.empty()){
+//        CCLog("parameter is empty");
+        JSBHelper::CallNativeFunction(func_name.c_str(),NULL);
+    }else{
+//        CCLog("parameter is not empty");
+        JSBHelper::CallNativeFunction(func_name.c_str(),parameter.c_str());
+    }
+//    JSBHelper::CallNativeFunction(func_name.c_str(),parameter.c_str());
+    
 //    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     
     //JSVAL_TO_INT(argv[1]);

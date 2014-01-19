@@ -21,7 +21,7 @@ extern jsval anonEvaluate(JSContext *cx, JSObject *thisObj, const char* string);
 
 //Don't need to understand.
 void JSBHelper::CallCppFunction(const char* methodName ,const char* methodParams){
-//    CCLog("into callCppFunc, methodName is: %s, methodParams is: %s", methodName, methodParams);
+    CCLog("into callCppFunc, methodName is: %s, methodParams is: %s", methodName, methodParams);
     
     if (methodName == NULL){
         CCLog("[Error!!] Can't call cpp function without function name.");
@@ -76,13 +76,14 @@ void JSBHelper::CallCppFunction(const char* methodName ,const char* methodParams
     
 }
 void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodParams){
-//    CCLog("into %s, methodName is: %s, methodParams is: %s", __FUNCTION__ ,methodName, methodParams);
+//    CCLog("into %s, methodName is: %s", __FUNCTION__ ,methodName);
     
     if (methodName == NULL){
         CCLog("[Error!!] Can't call cpp function without function name.");
         return;
     }
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+    CCObject* obj = NULL;
     if (methodParams != NULL)
     {
         json_error_t error;
@@ -96,9 +97,9 @@ void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodPar
         }
 
         json_t * jsonMethodParams = json_object_get(root, __CALLED_METHOD_PARAMS__);
-        CCObject* obj = (CCDictionary*)NDKHelper::GetCCObjectFromJson(jsonMethodParams);
+        obj = (CCDictionary*)NDKHelper::GetCCObjectFromJson(jsonMethodParams);
         
-        SendMessageWithParams(string(methodName), obj);
+
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         
         json_decref(root);
@@ -113,6 +114,7 @@ void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodPar
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
 
     }
+            SendMessageWithParams(string(methodName), obj);
     
 }
 //Before you call Cpp function from Javascript, need to add Cpp function to JSBHelper by this function.

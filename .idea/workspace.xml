@@ -2,41 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e804fad-abd4-4331-9654-a5e643abe32c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/classes/com/easyjsb/classes/AndroidJSBHelper.class" afterPath="$PROJECT_DIR$/proj.android/bin/classes/com/easyjsb/classes/AndroidJSBHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/Bridge.o" afterPath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/Bridge.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/EasyJsbSample.apk" afterPath="$PROJECT_DIR$/proj.android/bin/EasyJsbSample.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/classes/com/hardworking/testjsbsample/EasyJsbSample.class" afterPath="$PROJECT_DIR$/proj.android/bin/classes/com/hardworking/testjsbsample/EasyJsbSample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/JSBHelper/JSBHelper.o" afterPath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/JSBHelper/JSBHelper.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/NDKHelper/NDKHelper.o" afterPath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/NDKHelper/NDKHelper.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.xcworkspace/xcuserdata/lp43.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/proj.ios/EasyJsbSample.xcodeproj/project.xcworkspace/xcuserdata/lp43.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/dexedLibs/annotations-cbeaf50ed668fccb65a54739832b22f0.jar" afterPath="$PROJECT_DIR$/proj.android/bin/dexedLibs/annotations-cbeaf50ed668fccb65a54739832b22f0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/classes.dex" afterPath="$PROJECT_DIR$/proj.android/bin/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/JSBHelper/js_bindings_easyJSB.o" afterPath="$PROJECT_DIR$/proj.android/obj/local/armeabi/objs/cocos2djs_shared/__/__/Classes/JSBHelper/js_bindings_easyJSB.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/libs/armeabi/libcocos2djs.so" afterPath="$PROJECT_DIR$/proj.android/libs/armeabi/libcocos2djs.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/obj/local/armeabi/libcocos2djs.so" afterPath="$PROJECT_DIR$/proj.android/obj/local/armeabi/libcocos2djs.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/dexedLibs/libcocos2dx2.2.2-a3141ee92272729b03b716bec43d3a25.jar" afterPath="$PROJECT_DIR$/proj.android/bin/dexedLibs/libcocos2dx2.2.2-a3141ee92272729b03b716bec43d3a25.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/bin/resources.ap_" afterPath="$PROJECT_DIR$/proj.android/bin/resources.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/src/com/easyjsb/classes/AndroidJSBHelper.java" afterPath="$PROJECT_DIR$/proj.android/src/com/easyjsb/classes/AndroidJSBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Bridge.cpp" afterPath="$PROJECT_DIR$/Classes/Bridge.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/src/com/hardworking/testjsbsample/EasyJsbSample.java" afterPath="$PROJECT_DIR$/proj.android/src/com/hardworking/testjsbsample/EasyJsbSample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/IOSNDKHelper/IOSNDKHelper.mm" afterPath="$PROJECT_DIR$/Classes/IOSNDKHelper/IOSNDKHelper.mm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelper.cpp" afterPath="$PROJECT_DIR$/Classes/JSBHelper/JSBHelper.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/src/JSBHelper.js" afterPath="$PROJECT_DIR$/Resources/src/JSBHelper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/assets/src/JSBHelper.js" afterPath="$PROJECT_DIR$/proj.android/assets/src/JSBHelper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/NDKHelper/NDKHelper.cpp" afterPath="$PROJECT_DIR$/Classes/NDKHelper/NDKHelper.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.ios/RootViewController.mm" afterPath="$PROJECT_DIR$/proj.ios/RootViewController.mm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/JSBHelper/js_bindings_easyJSB.cpp" afterPath="$PROJECT_DIR$/Classes/JSBHelper/js_bindings_easyJSB.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/src/myApp.js" afterPath="$PROJECT_DIR$/Resources/src/myApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android/assets/src/myApp.js" afterPath="$PROJECT_DIR$/proj.android/assets/src/myApp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EasyJsbSample.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390111142306" ignored="false" />
+    <file path="/Dummy.txt" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390122950294" ignored="false" />
     <file path="$PROJECT_DIR$/../../../cocos2d-x2.1.4/projects/ChallengeJS/Resources/js/HomeScene.js" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1389466514062" ignored="false" />
-    <file path="/myApp.js" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390027026680" ignored="false" />
+    <file path="/myApp.js" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390123596103" ignored="false" />
     <file path="$PROJECT_DIR$/proj.android/assets/jsb_cocosbuilder.js" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1389466758823" ignored="false" />
     <file path="/JSBHelper.js" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390114593513" ignored="false" />
+    <file path="$PROJECT_DIR$/proj.android/bin/AndroidManifest.xml" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390116289047" ignored="false" />
+    <file path="$PROJECT_DIR$/proj.android/assets/src/myApp.js" changelist="6e804fad-abd4-4331-9654-a5e643abe32c" time="1390116289047" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +37,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myApp.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myApp.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="26" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.0">
+            <state line="91" column="38" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.5403088">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSBHelper.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JSBHelper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="27" selection-start="5701" selection-end="5718" vertical-scroll-proportion="0.4209559">
+            <state line="178" column="27" selection-start="5701" selection-end="5718" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,13 +73,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Resources/src/myApp.js" />
         <option value="$PROJECT_DIR$/Resources/src/JSBHelper.js" />
+        <option value="$PROJECT_DIR$/Resources/src/myApp.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
     <option name="y" value="22" />
     <option name="width" value="1260" />
     <option name="height" value="729" />
@@ -204,7 +184,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../cocos2d-x2.1.4/projects/ChallengeJS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Challenge" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -220,7 +200,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="22" width="1260" height="729" extended-state="0" />
+    <frame x="0" y="22" width="1260" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -309,6 +289,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="27" selection-start="5701" selection-end="5718" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -379,16 +373,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
+    <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="26" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.0">
+        <state line="178" column="27" selection-start="5701" selection-end="5718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/src/JSBHelper.js">
+    <entry file="file://$PROJECT_DIR$/Resources/src/myApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="27" selection-start="5701" selection-end="5718" vertical-scroll-proportion="0.4209559">
+        <state line="91" column="38" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.5403088">
           <folding />
         </state>
       </provider>
