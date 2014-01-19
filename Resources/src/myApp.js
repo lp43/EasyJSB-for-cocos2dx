@@ -57,11 +57,11 @@ var MyLayer = cc.Layer.extend({
 
                 // [Manner first.]
                 //First manner to declare call Cpp function with callback.
-                JSBHelper.AddSelector("helloJS",this.helloJS);
-                SendMessageToCpp("helloCpp", null);
+//                JSBHelper.AddSelector("helloJS",this.helloJS);
+//                SendMessageToCpp("helloCpp", null);
 
                 //[Manner second.]
-//                SendMessageToCppWithCallbackName("helloCpp",null,"helloJS",this.helloJS);
+                SendMessageToCppWithCallbackName("helloCpp",map,"helloJS",this.helloJS);
 
 
             },this);

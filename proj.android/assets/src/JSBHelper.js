@@ -129,25 +129,25 @@ SendMessageToCppWithCallbackName = function(func_name, func_params, callback_nam
  * @param func_params Parameters you want to send that is needed by Cpp function.
  * @param callback If Cpp function completed the work, what JS function is you want to get message after that.
  */
-SendMessageToCppWithCallback = function(func_name, func_params, callback){
-    if( sys.platform == 'browser')return;
+// SendMessageToCppWithCallback = function(func_name, func_params, callback){
+//     if( sys.platform == 'browser')return;
 
-    var type_cb = typeof callback;
+//     var type_cb = typeof callback;
 
-    if(type_cb != 'function')
-        throw "Expression is of type " +type_cb+ ",not function";
+//     if(type_cb != 'function')
+//         throw "Expression is of type " +type_cb+ ",not function";
 
-//    cc.log("function is: "+callback.toString());
+// //    cc.log("function is: "+callback.toString());
 
-    var fName = callback.toString().match(/function ([^\(]+)/)[1];
-    if(!fName){
-       cc.log("can't get function name from function you set into");
-        return;
-    }
-    cc.log("func name: "+fName);
+//     var fName = callback.toString().match(/function ([^\(]+)/)[1];
+//     if(!fName){
+//        cc.log("can't get function name from function you set into");
+//         return;
+//     }
+//     cc.log("func name: "+fName);
 
-    SendMessageToCppWithCallbackName(func_name,func_params,fName,callback);
-};
+//     SendMessageToCppWithCallbackName(func_name,func_params,fName,callback);
+// };
 SendMessageToCpp = function(func_name, func_params){
     if( sys.platform == 'browser')return;
 
