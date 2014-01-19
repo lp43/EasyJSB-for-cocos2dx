@@ -262,7 +262,7 @@ extern "C"
     // Method for sending message from CPP to the targetted platform
     void SendMessageWithParams(string methodName, CCObject* methodParams)
     {
-        CCLog("into function: %s",__FUNCTION__);
+//        CCLog("into function: %s",__FUNCTION__);
         
         if (0 == strcmp(methodName.c_str(), ""))
             return;
@@ -274,11 +274,11 @@ extern "C"
 //                CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         if (methodParams != NULL)
         {
-                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
             json_t* paramsJson = NDKHelper::GetJsonFromCCObject(methodParams);
-                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
             json_object_set_new(toBeSentJson, __CALLED_METHOD_PARAMS__, paramsJson);
-                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         }
         
         #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -306,11 +306,11 @@ extern "C"
 //                CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         if (methodParams != NULL)
         {
-                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
             json_t *jsonParams = NDKHelper::GetJsonFromCCObject(methodParams);
-                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
             IOSNDKHelperImpl::RecieveCPPMessage(jsonMessageName, jsonParams);
-                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
             json_decref(jsonParams);
 //                    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         }

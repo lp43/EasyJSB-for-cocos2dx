@@ -39,7 +39,7 @@ SendMessageToNativeWithCallbackName = function(func_name, func_params, callback_
         callMethod["calling_method_params"] = callParam;
 
         jsonStr = JSON.stringify(callMethod);
-        cc.log("jsonStr: "+jsonStr);
+//        cc.log("jsonStr: "+jsonStr);
     }
 
     JSBHelper.AddSelector(callback_name, callback);
@@ -85,7 +85,7 @@ SendMessageToNativeWithCallbackName = function(func_name, func_params, callback_
 SendMessageToCppWithCallbackName = function(func_name, func_params, callback_name, callback){
     if( sys.platform == 'browser')return;
 
-    cc.log("into SendMessageToCppWithCallbackName");
+//    cc.log("into SendMessageToCppWithCallbackName");
 
 
 
@@ -116,7 +116,7 @@ SendMessageToCppWithCallbackName = function(func_name, func_params, callback_nam
     }
 
 
-    JSBHelper.SendMessageToCppWithParams(func_name, func_params);
+    JSBHelper.SendMessageToCppWithParams(func_name, jsonParams);
 };
 /**
  * [Corresponding to third manner]
@@ -140,7 +140,10 @@ SendMessageToCppWithCallback = function(func_name, func_params, callback){
 //    cc.log("function is: "+callback.toString());
 
     var fName = callback.toString().match(/function ([^\(]+)/)[1];
-
+    if(!fName){
+       cc.log("can't get function name from function you set into");
+        return;
+    }
     cc.log("func name: "+fName);
 
     SendMessageToCppWithCallbackName(func_name,func_params,fName,callback);
@@ -148,7 +151,7 @@ SendMessageToCppWithCallback = function(func_name, func_params, callback){
 SendMessageToCpp = function(func_name, func_params){
     if( sys.platform == 'browser')return;
 
-    cc.log("into JS: SendMessageToCpp");
+//    cc.log("into JS: SendMessageToCpp");
     SendMessageToCppWithCallbackName(func_name,func_params,null,null);
 };
 /**
@@ -161,7 +164,7 @@ SendMessageToCpp = function(func_name, func_params){
  */
 JSBHelper.AddSelector = function(func_name, selector){
     if( sys.platform == 'browser')return;
-    cc.log("into JS: AddSelector");
+//    cc.log("into JS: AddSelector");
 
     JSBHelper.selectorArray[func_name] = selector;
 };
@@ -181,7 +184,10 @@ JSBHelper.GetMessageFromCpp = function(func_name,returnValue){
         return;
     }
 //     cc.log("returnValue: "+returnValue);
-    JSBHelper.selectorArray[func_name](returnValue);
+
+    var returnValueMap = JSON.parse(returnValue);
+
+    JSBHelper.selectorArray[func_name](returnValueMap);
 
     delete JSBHelper.selectorArray[func_name];
 };

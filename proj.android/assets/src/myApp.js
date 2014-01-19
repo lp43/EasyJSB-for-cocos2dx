@@ -53,7 +53,7 @@ var MyLayer = cc.Layer.extend({
 
                 var map = {};
                 map["message"]="I am caller from Javascript";
-
+                map["message2"]="I am caller2 from Javascript";
 
                 // [Manner first.]
                 //First manner to declare call Cpp function with callback.
@@ -78,7 +78,7 @@ var MyLayer = cc.Layer.extend({
 
                 var map = {};
                 map["message"]="I am caller from Javascript";
-
+                map["message2"]="I am caller2 from Javascript";
 
                 // [Manner first.]
                 //First manner to declare call Cpp function with callback.
@@ -86,8 +86,8 @@ var MyLayer = cc.Layer.extend({
 //                SendMessageToNativeWithCallbackName("helloNative", map);
 
                 //[Manner second.]
-//                SendMessageToNativeWithCallbackName("helloNative",map,"helloJS",this.helloJS);
-                SendMessageToNativeWithCallbackName("helloNative",null,null,null);
+                SendMessageToNativeWithCallbackName("helloNative",map,"helloJS",this.helloJS);
+//                SendMessageToNativeWithCallbackName("helloNative",null,null,null);
 
 //                SendMessageToNative("helloNative",map);
 //                SendMessageToNative("helloNative",null);
@@ -119,11 +119,11 @@ var MyLayer = cc.Layer.extend({
         cc.log("into backClicked");
         cc.Director.getInstance().end();
     },
-    helloJS : function helloJS (returnValue) {
-        cc.log("This is method: helloJS in Javascript, get parameter: "+returnValue);
-        var ob = JSON.parse(returnValue);
-        for(key in ob){
-            cc.log("key: "+key+", value: "+ob[key]);
+    helloJS : function helloJS (returnValueMap) {
+        cc.log("This is method: helloJS in Javascript");
+
+        for(key in returnValueMap){
+            cc.log("key: "+key+", value: "+returnValueMap[key]);
         }
     }
 });

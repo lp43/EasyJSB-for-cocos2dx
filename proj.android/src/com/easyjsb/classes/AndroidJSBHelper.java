@@ -26,7 +26,7 @@ public class AndroidJSBHelper
 	
 
 	public static void SendMessageToJS(final Context cnx, final String methodToCall, final JSONObject paramList){
-		Log.i(TAG, "into SendMessageToJS");
+//		Log.i(TAG, "into SendMessageToJS");
 		
 		((Cocos2dxActivity)cnx).runOnGLThread(new Runnable(){
 			@Override

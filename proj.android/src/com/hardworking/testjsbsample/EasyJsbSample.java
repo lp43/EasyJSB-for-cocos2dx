@@ -48,6 +48,7 @@ public class EasyJsbSample extends Cocos2dxActivity{
 		JSONObject obj = new JSONObject();
 		try {
 			obj.put("message","I am message from native Android");
+			obj.put("message2","I am message2 from native Android");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

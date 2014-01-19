@@ -22,64 +22,87 @@ extern jsval anonEvaluate(JSContext *cx, JSObject *thisObj, const char* string);
 //Don't need to understand.
 void JSBHelper::CallCppFunction(const char* methodName ,const char* methodParams){
 //    CCLog("into callCppFunc, methodName is: %s, methodParams is: %s", methodName, methodParams);
+    
     if (methodName == NULL){
         CCLog("[Error!!] Can't call cpp function without function name.");
         return;
     }
     
-//    CCLog("into 26");
-//    CCLog("into JSBHelper::selectorList.size(): %lu",JSBHelper::selectorList.size());
+    CCObject* obj = NULL;
+    if (methodParams != NULL)
+    {
+        json_error_t error;
+        json_t *root;
+        root = json_loads(methodParams, 0, &error);
+        
+        if (!root)
+        {
+            fprintf(stderr, "error: on line %d: %s\n", error.line, error.text);
+            return;
+        }
+        
+        json_t * jsonMethodParams = json_object_get(root, __CALLED_METHOD_PARAMS__);
+        obj = (CCDictionary*)NDKHelper::GetCCObjectFromJson(jsonMethodParams);
+        //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        
+        json_decref(root);
+    }
     
+    
+    //    CCLog("into 26");
+    //    CCLog("into JSBHelper::selectorList.size(): %lu",JSBHelper::selectorList.size());
+    
+    bool isFoundMethod = false;
     for (unsigned int i = 0; i < JSBHelper::selectorList.size(); ++i)
     {
-//         CCLog("into 29");
+        //         CCLog("into 29");
         if (JSBHelper::selectorList[i].getName().compare(methodName) == 0)
         {
-//         CCLog("into 32");
+            isFoundMethod = true;
+            //         CCLog("into 32");
             SEL_CallFuncND sel = JSBHelper::selectorList[i].getSelector();
             CCNode *target = JSBHelper::selectorList[i].getTarget();
-//                CCLog("into 34");
+            //                CCLog("into 34");
             if (sel) {
-                (target->*sel)(NULL,(void*)methodParams);
+                (target->*sel)(NULL,(void*)obj);
             }
             
             break;
-        }else{
-            CCLog("[Error!!] Can't find function: %s. Please ensure it has been addSelector in Cpp side.",methodName);
         }
     }
+   
+    if(!isFoundMethod)CCLog("[Error!!] Can't find function: %s. Please ensure it has been addSelector in Cpp side.",methodName);
+
+    
 }
 void JSBHelper::CallNativeFunction(const char* methodName ,const char* methodParams){
-    CCLog("into %s, methodName is: %s, methodParams is: %s", __FUNCTION__ ,methodName, methodParams);
+//    CCLog("into %s, methodName is: %s, methodParams is: %s", __FUNCTION__ ,methodName, methodParams);
     
     if (methodName == NULL){
         CCLog("[Error!!] Can't call cpp function without function name.");
         return;
-    }
-//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
-    json_error_t jerror;
-    json_t* jsonPrms = json_loads(methodParams, 0, &jerror);
-
-    if (!jsonPrms)
-    {
-        fprintf(stderr, "error: on line %d: %s\n", jerror.line, jerror.text);
     }
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     if (methodParams != NULL)
     {
-//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
-        json_t *toBeSentJson = json_object();
-        json_t *jsonMethodParams = json_object_get(jsonPrms, __CALLED_METHOD_PARAMS__);
-//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
-        json_object_set_new(toBeSentJson, __CALLED_METHOD_PARAMS__, jsonMethodParams);
-//                CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
-        CCObject* obj = (CCDictionary*)NDKHelper::GetCCObjectFromJson(toBeSentJson);
-//                CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        json_error_t error;
+        json_t *root;
+        root = json_loads(methodParams, 0, &error);
+        
+        if (!root)
+        {
+            fprintf(stderr, "error: on line %d: %s\n", error.line, error.text);
+            return;
+        }
+
+        json_t * jsonMethodParams = json_object_get(root, __CALLED_METHOD_PARAMS__);
+        CCObject* obj = (CCDictionary*)NDKHelper::GetCCObjectFromJson(jsonMethodParams);
+        
         SendMessageWithParams(string(methodName), obj);
 //        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         
-        json_decref(jsonPrms);
-        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+        json_decref(root);
+//        CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
         
         //If run code below will cause crash for the reason:
         //incorrect checksum for freed object - object was probably modified after being freed.
@@ -129,7 +152,7 @@ extern "C"
         string jsonString = JniHelper::jstring2string(json);
         const char *jsonCharArray = jsonString.c_str();
         
-        CCLOG("jsonCharArray: %s",jsonCharArray);
+//        CCLOG("jsonCharArray: %s",jsonCharArray);
         
         json_error_t error;
         json_t *root;

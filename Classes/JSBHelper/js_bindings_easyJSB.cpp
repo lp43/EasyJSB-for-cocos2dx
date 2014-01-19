@@ -16,22 +16,22 @@ JSBool JSB_JSBHelper_SendMessageToCppWithParams(JSContext *cx, uint32_t argc, js
 	return JS_TRUE;
 }
 JSBool JSB_JSBHelper_SendMessageToNative(JSContext *cx, uint32_t argc, jsval *vp){
-    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     
 	std::string func_name ;
 	std::string parameter ;
     
 	jsval *argv = JS_ARGV(cx, vp);
-    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
 
 	jsval_to_std_string(cx, argv[0], &func_name);
-    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
 
     jsval_to_std_string(cx, argv[1], &parameter);
-    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     
     JSBHelper::CallNativeFunction(func_name.c_str(),parameter.c_str());
-    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
+//    CCLog("into function: %s, line: %d",__FUNCTION__,__LINE__);
     
     //JSVAL_TO_INT(argv[1]);
     

@@ -78,8 +78,12 @@
 
 - (void) helloNative:(NSObject *)prms{
     NSLog(@"this is method: helloNative in ios, prms is: %@",prms);
+    NSDictionary* dic_get = (NSDictionary*)prms;
+    NSString* param1 = [dic_get objectForKey:@"message"];
+    NSString* param2 = [dic_get objectForKey:@"message2"];
+    NSLog(@"param1 is: %@, param2 is: %@",param1,param2);
     
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"hello, i am message from native ios"],@"message", nil];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"hello, i am message from native ios",@"message", @"hello, i am message2 from native ios",@"message2",nil];
     //    [IOSNDKHelper SendMessage:@"helloJS" WithParameters:dictionary];
     [IOSJSBHelper SendMessageToJS:@"helloJS" WithParameters:dictionary];
 }
